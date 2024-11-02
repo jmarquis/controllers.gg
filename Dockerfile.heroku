@@ -3,18 +3,21 @@ FROM ruby:3.1.3-alpine
 ARG RAILS_ENV=production
 
 RUN apk add --update --no-cache \
-      curl \
-      build-base \
-      less \
-      nodejs\
-      postgresql-dev \
-      postgresql-client \
-      yarn \
-      imagemagick \
-      git \
-      tzdata \
-      gcompat \
-      libssl1.1
+  curl \
+  build-base \
+  less \
+  nodejs\
+  postgresql-dev \
+  postgresql-client \
+  yarn \
+  imagemagick \
+  git \
+  tzdata \
+  gcompat \
+  libssl1.1 \
+  jemalloc
+
+ENV LD_PRELOAD=libjemalloc.so.2
 
 RUN mkdir -p /opt/rails
 WORKDIR /opt/rails

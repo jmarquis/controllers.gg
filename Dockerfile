@@ -1,19 +1,22 @@
 FROM ruby:3.1.3-alpine
 
 RUN apk add --update --no-cache \
-      vimdiff \
-      build-base \
-      less \
-      nodejs\
-      postgresql-dev \
-      postgresql-client \
-      yarn \
-      imagemagick \
-      git \
-      tzdata \
-      gcompat \
-      libssl1.1 \
-      inotify-tools
+  vimdiff \
+  build-base \
+  less \
+  nodejs\
+  postgresql-dev \
+  postgresql-client \
+  yarn \
+  imagemagick \
+  git \
+  tzdata \
+  gcompat \
+  libssl1.1 \
+  inotify-tools \
+  jemalloc
+
+ENV LD_PRELOAD=libjemalloc.so.2
 
 RUN mkdir -p /opt/rails
 WORKDIR /opt/rails
