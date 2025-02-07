@@ -1,6 +1,8 @@
 ---
 title: SmashScope
 subtitle: The definitive GCC input viewer and oscilloscope software.
+tags:
+  - tools
 ---
 
 **SmashScope** is an application for viewing input information related to a connected GameCube controller. It primarily features an input viewer, a notch viewer / precision analog readout, and an oscilloscope function with various waveform views designed to measure a controller's analog stick performance specific to Smash gameplay, such as [snapback](/analog-sticks/stick-components/stickboxes#snapback) and dashback.
