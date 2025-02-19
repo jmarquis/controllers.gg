@@ -7,7 +7,7 @@ tags:
 
 **SmashScope** is an application for viewing input information related to a connected GameCube controller. It primarily features an input viewer, a notch viewer / precision analog readout, and an oscilloscope function with various waveform views designed to measure a controller's analog stick performance specific to Smash gameplay, such as [snapback](/analog-sticks/stick-components/stickboxes#snapback) and dashback.
 
-Developed jointly by KingKirb64 and Goomy, SmashScope can be run on a homebrewed Wii or in Dolphin Emulator. Note that SmashScope must be run in the mainline Dolphin Emulator, not the Slippi version.
+Developed jointly by KingKirb64 and Goomy, SmashScope can be run on a homebrewed Wii or in Dolphin Emulator. Note that SmashScope must be run in the mainline Dolphin Emulator, not the Slippi version. Running SmashScope on a Wii is generally preferred when using the oscilloscope because the Wii hardware polls at a much higher rate than Dolphin, resulting in smoother, more accurate waveforms.
 
 ## Resources
 
